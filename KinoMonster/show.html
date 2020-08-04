@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Киномонстр</title>
+	<meta name="description" content="Киномонстр - это портал о кино">
+	<meta name="keywords" content = "Фильмы, фильмы онлайн, hd">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	
+	<div class="main">
+		<div class="header">
+
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="/">КиноМонстр</a></h1>
+					<h2>Кино - наша страсть!</h2>
+				</div>
+			</div>
+
+			<div class="menubar">
+				<ul class="menu">
+					<li class="selected"><a href="index.html">Главная</a></li> 
+					<li><a href="films.html">Фильмы</a></li>
+					<li><a href="#">Сериалы</a></li>
+					<li><a href="rating.html">Рейтинг фильмов</a></li>
+					<li class="selected"><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- нужно потом запилить сайт чтобы такой блок был и справа и слева-->
+		<div class="site_content"> 
+			<div class="sidebar_container">
+				
+				<div class="sidebar">
+					<h2>Поиск</h2>
+					<form method="post" action="#" id="search_form">
+						<input type="search" name ="search_field" placeholder="ваш запрос" />
+						<input type="submit" class="btn" value="найти" />
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>Вход</h2>
+					<form method="post" action="#" id="login">
+						<input type="text" name ="login_field" placeholder="логин" />
+						<input type="password" name ="password_field" placeholder="пароль" />
+						<input type="submit" class="btn" value="вход" />
+						<div class="lables_passreg_text">
+							<span><a href="#">забыли пароль?</a> </span> | <span><a href="#">регистрация</a></span>
+						</div>
+					</form>
+				</div>
+				<div class="sidebar">
+					<h2>Новости</h2>
+					<span>18.06.2020</span>
+					<p>Мы запустили расширенный поиск</p>
+					<a href="#">Читать</a>
+
+				</div>
+
+				<div class="sidebar">
+					<h2>Рейтинг фильмов</h2>
+					<ul>
+						<li><a href="show.html">Интерстеллар</a><span class="rating_sidebar">8.1</span></li>
+						<li><a href="show.html">Матрица</a><span class="rating_sidebar">8.0</span></li>
+						<li><a href="show.html">Безумный Макс</a><span class="rating_sidebar">7.5</span></li>
+						<li><a href="show.html">Облачный атлас</a><span class="rating_sidebar">7.4</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="content">
+				
+				<h1>Интерстеллар</h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qcPfI0y7wRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+				<div class="info_film_page">
+					<span class="label">рейтинг: </span><span class="value">8.1 / 10</span>
+					<span class="label">год: </span><span class="value">2014</span>
+					<span class="label">режиссер: </span><span class="value">Кристофер Нолан</span>
+				</div>
+				<hr>
+				
+				
+				<h2>Описание Интерстеллар</h2>
+				<div class="descriptions_film">
+					<img src="assets/img/inter.png">
+					Наше время на Земле подошло к концу, команда исследователей берет на себя самую важную миссию в истории человечества; путешествуя за пределами нашей галактики, чтобы узнать есть ли у человечества будущее среди звезд.
+					Когда засуха, пыльные бури и вымирание растений приводят человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и найти планету с подходящими для человечества условиями.
+				</div>
+				<hr>
+				
+
+				<h2>Отзывы о Интерстеллар</h2>
+				<div class="reviews">
+					<div class="review_name">
+						Ваиль Рахматулин
+					</div>
+					<div class="review_text">
+						Я понимаю, почему эта картина завоевала сердца обывателей. Она в простой, доступной форме слегка затрагивает сложные концепции мироздания. Чёрные дыры, искажения времени, дополнительные пространственные измерения, показанные столь-же красочно, сколь далеко от реальности, будоражат умы людей, зевавших на уроках физики и астрономии в школе. 
+					</div>
+				</div>
+				<div class="reviews">
+					<div class="review_name">
+						Аноним
+					</div>
+					<div class="review_text">
+						Великий каст актеров, каждый из которых привнес свою лепту в становление этого шедевра. Великолепный российский дубляж – это действительно огромная работа, которая заставляет тебя прочувствовать всю боль, страх и безысходность людей, попадающих в ситуации, о которых рассказывает фильм. Спустя 6 лет я все еще остаюсь под колоссальным впечатлением от Стеллара – пересмотрев его вновь, останусь в этом состоянии и дальше.
+					</div>
+				</div>
+				<div class="send">
+					<form method="post" action="#" id="review">
+						<input type="text" name="review_name" placeholder="ваше имя">	
+						<textarea name="review_text"></textarea>
+						<input type="submit" value="отправить">
+					</form>
+				</div>	
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>
+				<a href="index.html">Главная</a> |
+				<a href="films.html">Фильмы</a> |
+				<a href="#">Сериалы</a> |
+				<a href="rating.html">Рейтинг фильмов</a> |
+				<a href="contacts.html">Контакты</a> 
+			</p>
+			<p>wh-dp.com 2015</p>
+		</div>
+
+	</div>
+</body>
+</html>
+
+
